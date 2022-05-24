@@ -164,6 +164,10 @@ h1.name-animated:hover{
 
 /************* About me **************/
 
+#about-me {
+    top: 80px;
+}
+
 .container{
     display: flex;
     color: #424242;
