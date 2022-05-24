@@ -115,6 +115,12 @@ h1.name-animated:hover{
 
 /************* NavBar **************/
 
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
 #header p {
     font-size: 35px;
     text-transform: uppercase;
