@@ -2,23 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 :root{
-    --black-color: #000000;
-    --white-color: #FFFFFF;
-    --grey-color: #2c2c2c;
     --font-family: 'Ubuntu', sans-serif;
-    --font-color: #a8a8a8;
-    --font-size-16px: 1rem;
 }
 
 /* Universal Selector - Base Style */
 *{
-    padding: 0;
-    margin: 0;
+    /*overflow-x: hidden;*/
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
+
 html{
     font-family: var(--font-family);
 }
+
 a{
     text-decoration: none;
 }
@@ -33,6 +31,17 @@ li {
     list-style: none;
 }
 
+/* Title */
+.section-title span {
+    color: #f54171;
+    text-transform: uppercase;
+}
+h1.section-title {
+    display: block;
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+    text-align: center;
+}
 
 .hook.container{
     color: #e1e1e1;
@@ -54,7 +63,6 @@ li {
 
 /************** Hook **************/
 
-/* Hook Background */
 #hook{
     background-image: url("/img/bg1.jpg");
     background-size: cover;
@@ -62,6 +70,7 @@ li {
     position: relative;
     z-index: 1;
 }
+
 #hook::after{
     content: "";
     position: absolute;
@@ -104,33 +113,59 @@ h1.name-animated:hover{
     background-position: -100%;
 }
 
+/************* NavBar **************/
+
+#header p {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#header span {
+    color: #f54171;
+    font-size: 40px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+#header strong {
+    color: #71a8bb;
+}
+
+#header a {
+    display: block;
+    color: white;
+    font-size: 17px;
+}
+
+#header .info {
+    margin-right: 20px;
+}
+
+#header .navBar{
+    background-color: #343f4f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+    max-height: 80px;
+}
+#header .list {
+    display:inline-flex;
+    justify-content: space-between;
+    gap: 35px;
+    align-items: center;
+}
+
 
 /************* About me **************/
 
-.about-me.container{
+.container{
+    display: flex;
     color: #424242;
     min-height: 100vh;
     width: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: 0.5px;
-}
-
-.section-title span {
-    color: #f54171;
-}
-.section-title {
-    font-size: 2.5rem;
-}
-
-#about-me .about-me {
-    flex-direction: column-reverse;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 20px;
-    line-height: 40px;
 }
 
 #about-me .col-left img{
@@ -139,12 +174,22 @@ h1.name-animated:hover{
     border: 10px solid white;
 }
 
+#about-me .about-me {
+    flex-direction: column-reverse;
+    text-align: center;
+    min-width: 280px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    line-height: 40px;
+}
+
 #about-me .col-right {
     max-width: 100%;
 }
+
 #about-me .col-right p{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 /* about-me resume button */
@@ -153,15 +198,16 @@ h1.name-animated:hover{
     display: inline-block;
     background-color: transparent;
     border: 2.5px solid #f54171;
-    padding: 5px 40px;
+    padding: 5px 32px;
     font-size: 1rem;
     letter-spacing: 0.1rem;
 }
 #about-me .resume-btn:hover {
     color: #ffffff;
-    font-weight: bold;
-    padding: 5px 45px;
-    background-color: #f54a4a;
+    font-size: 1.1rem;
+    padding: 5px 40px;
+    background-color: #e37979;
+    border: 2.5px solid #e37979;
 }
 
 /* about-me image */
@@ -175,7 +221,7 @@ h1.name-animated:hover{
     position: absolute;
     left: -28px;
     top: 18px;
-    height: 96%;
+    height: 94%;
     width: 96%;
     border: 7px solid #f54171;
     z-index: -1;
@@ -183,293 +229,149 @@ h1.name-animated:hover{
 
 /************* Education **************/
 
-.education.container{
-    flex-direction: column-reverse;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#education .col-left img{
+    width: 200px;
+    height: 100px;
+    border: 10px solid white;
 }
 
 #education .education {
+    flex-direction: column-reverse;
     text-align: center;
+    min-width: 280px;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 0px 40px;
+    line-height: 40px;
 }
 
-#education p {
-    line-height: 0;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-#education .col-left img{
-    width: 150px;
-    height: 60px;
+#education .bu  {
+    text-decoration: underline;
+    font-size:19px
 }
 
 /************* Skills **************/
 
-#skills .skills {
+.skills.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
     text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 20px;
+    margin-left: 30px;
+}
+.row-1, .row-2{
+    flex-direction: row;
 }
 
-#skills .card {
+.card {
     position: relative;
-    width: 280px;
-    height: 150px;
-    background: rgb(255, 202, 202);
+    width: 300px;
+    height: 350px;
     margin: 20px;
-    box-shadow: 0 15px 35px rgba(129, 129, 129, 0.5);
-    border-radius: 15px;
+    border-radius: 50%;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+    display: flex;
+    justify-content: flex-start;
+}
+.card:hover{
+    width: 300px;
+    height: 350px;
+    transition-delay: 0s;
+}
+.card .circle {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-#skills .card .contentBox {
-    position: relative;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.2s ease-out;
-}
-
-#skills .card .contentBox h2 {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 25px;
-    text-align: center;
-    margin: 20px 0 10px;
-    margin: 50px;
-}
-#skills .card .contentBox:hover h2 {
-    opacity: 0;
-}
-
-#skills .card .web-dev{
-    font-size: 1.2rem;
-    opacity: 0;
-    left: 100px;
+.card .circle::before {
+    content: '';
     position: absolute;
-    transform: translateY(40px);
-    transition: 0.2s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#b0e5ff, #afbfec);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.card:hover .circle::before {
+    clip-path: circle(400px at center);
 }
 
-#skills .card:hover .web-dev {
-    font-size: 1.2rem;
-    line-height: 25px;
-    bottom: 35px;
-    left: 100px;
-    color: #484848;
-    transform: translateY(0px);
-    opacity: 1;
+.card p {
+    color: #ffffff;
+    font-size: 1.6rem;
+    z-index: 1;
+    transition: 0.3s;
+    transition-delay: 0.3s;
 }
-
-#skills .card2 {
-    position: relative;
-    width: 280px;
-    height: 150px;
-    background: rgb(203, 218, 255);
-    margin: 20px;
-    box-shadow: 0 15px 35px rgba(129, 129, 129, 0.5);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#skills .card2 .contentBox h2 {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 24px;
+.card h3 {
+    /*color: #ffffff;*/
+    font-size: 1.7rem;
     text-align: center;
-    margin: 20px 0 10px;
-    margin: 50px;
-}
-
-#skills .card2 .contentBox:hover h2 {
-    opacity: 0;
-}
-
-#skills .card2 .web-dev{
-    font-size: 1.2rem;
-    opacity: 0;
-    right: 110px;
-    position: absolute;
-    transform: translateY(40px);
-    transition: 0.2s ease;
-}
-
-#skills .card2:hover .web-dev {
-    font-size: 1.2rem;
-    line-height: 25px;
-    bottom: 25px;
-    right: 110px;
-    color: #484848;
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-
-#skills .card3 {
-    position: relative;
-    left: 300px;
-    bottom: 340px;
-    width: 280px;
-    height: 150px;
-    background: rgb(203, 218, 255);
-    margin: 20px;
-    box-shadow: 0 15px 35px rgba(129, 129, 129, 0.5);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
 
-#skills .card3 .contentBox h2 {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 24px;
+}
+.card:hover .circle p {
+    transform: scale(0);
+    transition-delay: 0s;
     text-align: center;
-    margin: 20px 0 10px;
-    margin: 50px;
-}
-
-#skills .card3 .contentBox:hover h2 {
-    opacity: 0;
-}
-
-#skills .card3 .web-dev{
-    font-size: 1.2rem;
-    opacity: 0;
-    right: 115px;
-    position: absolute;
-    transform: translateY(40px);
-    transition: 0.2s ease;
-}
-
-#skills .card3:hover .web-dev {
-    font-size: 1.2rem;
-    line-height: 26px;
-    bottom: 50px;
-    right: 115px;
-    color: #484848;
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-
-#skills .card4 {
-    position: relative;
-    left: 300px;
-    bottom: 340px;
-    width: 280px;
-    height: 150px;
-    background: rgb(255, 202, 202);
-    margin: 20px;
-    box-shadow: 0 15px 35px rgba(129, 129, 129, 0.5);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-
-#skills .card4 .contentBox h2 {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 24px;
-    text-align: center;
-    margin: 20px 0 10px;
-    margin: 50px;
-}
-
-#skills .card4 .contentBox:hover h2 {
+.skills .content {
+    width: 50%;
+    top: 70px;
+    position: relative;
+    left: 50px;
     opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+    line-height: 35px;
 }
-
-#skills .card4 .web-dev{
-    font-size: 1.2rem;
-    opacity: 0;
-    right: 92px;
-    position: absolute;
-    transform: translateY(40px);
-    transition: 0.2s ease;
-}
-
-#skills .card4:hover .web-dev {
-    font-size: 1.2rem;
-    line-height: 26px;
-    bottom: 35px;
-    right: 92px;
-    color: #484848;
-    transform: translateY(0px);
+.card:hover .content {
     opacity: 1;
+    visibility: visible;
 }
 
 /************* Work Exp **************/
-#work .work {
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 20px 0 100px;
+.work.container {
+    flex-direction: column;
 }
 
-#work　.container{
-    color: #424242;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 #work .work-items {
-    text-align: left;
-    flex-basis: 60%;
-    justify-content: center;
-    background-image: url("/img/card.jpg");
-    background-size: cover;
+    width: 440px ;
+    height: 280px;
+    background: url("/img/card2.jpg") center;
+    background-size: 440px 280px;
     border-radius: 30px;
+    box-shadow: 2px 0 15px 2px rgba(150, 150, 150, 0.7);
+    margin-bottom: 40px;
+;
+}
+#work .content {
+    text-align: left;
     padding: 40px;
-    width: 500px;
-    margin: 20px 0 0 -10px;
-    box-shadow: 2px 0 10px rgba(150, 150, 150, 0.7);
-    position: relative;
-    z-index: 1;
 }
-#work .work-items:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top:0;
-    height: 100%;
-    width: 100%;
-    background-color: #FFFFFF;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-#work sub{
-    line-height: 40px;
-}
-
 #work li {
-    line-height: 25px;
+    line-height: 20px;
 }
 
 #work h2 {
     margin: 10px 0 0px 0;
 }
+
 
 /************* Contact **************/
 
@@ -541,4 +443,3 @@ h1.name-animated:hover{
 }
 #footer p {
     color: #5c697e;
-}
