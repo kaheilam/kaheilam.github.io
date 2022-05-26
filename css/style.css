@@ -731,13 +731,13 @@ h1.name-animated:hover{
     }
     #hook-header .nav-list ul li {
         display: inline-block;
+        margin: -7px;
     }
     #hook-header .nav-list ul li a {
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 0.9rem;
+        margin: 0 10px;
     }
     #hook-header .nav-list ul a::after {
         display: none;
     }
 }
-
