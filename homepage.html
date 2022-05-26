@@ -14,23 +14,30 @@
 </head>
 <body>
 
-<section id="header">
-    <nav class="navBar">
-        <a href="./homepage.html">
-            <p><span>K</span>a<span>H</span>ei</p>
-        </a>
-
-        <div class="category">
-            <ul class="list">
-                <li><a href="#about-me">About <strong>Me</strong></a></li>
-                <li><a href="#education"><strong>E</strong>ducation</a></li>
-                <li><a href="#skills"><strong>S</strong>kills</a></li>
-                <li><a href="#work">Work <strong>Exp</strong>erience</a></li>
-                <li><a href="#contact" class="info">Contact <strong>Info</strong></a></li>
-            </ul>
+<section id="hook-header">
+    <div class="hook-header container">
+        <div class="hook-nav-bar">
+            <div class="logo">
+                <a href="./index.html">
+                    <p><span>K</span>a<span>H</span>ei</p>
+                </a>
+            </div>
+            <div class="nav-list">
+                <div class="nav-icon">
+                    <div class="bar"></div>
+                </div>
+                <ul>
+                    <li><a href="./index.html" data-after="home"> Home </a></li>
+                    <li><a href="#about-me" data-after="aboutme"> About Me </a></li>
+                    <li><a href="#education" data-after="education"> Education </a></li>
+                    <li> <a href="#skills" data-after="skill"> Skills </a></li>
+                    <li><a href="#projects" data-after="project"> Projects </a></li>
+                    <li><a href="#work" data-after="experience"> Work Experience </a></li>
+                    <li><a href="#contact" data-after="contact"> Contact Info </a></li>
+                </ul>
+            </div>
         </div>
-
-    </nav>
+    </div>
 </section>
 
 <!--About Me-->
@@ -149,6 +156,40 @@
         </div>
 </section>
 
+<!-- projects -->
+<section id="projects">
+    <h1 class="section-title">Recent <span>Projects</span></h1>
+    <div class="projects container">
+        <div class="all-projects">
+
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Project 1</h1>
+                    <h3>My Homepage</h3>
+                    <p>This is a project about my personal info.</p>
+                    <a href="./index.html">Check out this project!</a>
+                </div>
+                <div class="project-img">
+                    <img src="/img/homepage.png">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-info">
+                    <h1>Project 2</h1>
+                    <h3>Space-Survival Game</h3>
+                    <p>This game was created by using Pygame and Python.</p>
+                    <a href="https://github.com/kaheilam/Space-Survival" target="_blank">Check out this project!</a>
+                </div>
+                <div class="project-img">
+                    <img src="/img/space.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
 <!-- Volunteer / Work Experience -->
 <section id="work">
@@ -246,6 +287,6 @@
     </div>
 </section>
 
-
+<script src="./js/app.js"></script>
 </body>
 </html>
