@@ -133,7 +133,7 @@ h1.name-animated:hover{
     text-transform: uppercase;
 }
 #hook-header .hook-header {
-    min-height: 8vh;
+    min-height: 7vh;
     background-color: rgba(24, 30, 35, 0.69);
 }
 
