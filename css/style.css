@@ -415,7 +415,7 @@ h1.name-animated:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#b0e5ff, #afbfec);
+    background: linear-gradient(rgba(113, 129, 180, 0.71), #122d52);
     clip-path: circle(120px at center);
     transition: 0.5s;
 }
@@ -431,7 +431,7 @@ h1.name-animated:hover{
     transition-delay: 0.3s;
 }
 .card h3 {
-    /*color: #ffffff;*/
+    color: #ffffff;
     font-size: 1.7rem;
     text-align: center;
     align-items: center;
