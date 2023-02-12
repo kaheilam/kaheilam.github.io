@@ -4,7 +4,6 @@
 :root{
     --regular: 'Montserrat', sans-serif;
     --iconspan: 'Kavoon', cursive;
-
 }
 
 *{
@@ -12,13 +11,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     overflow-y:hidden;
     overflow-x: hidden;
 }
-
-
 .logo {
     width: 150px;
     cursor: pointer;
@@ -38,9 +34,7 @@ body {
     font-family: var(--regular);
 }
 
-
-
-/* Nav Bar */
+/********** Nav Bar **********/
 .navbar {
     width: 90%;
     margin: auto;
@@ -50,8 +44,7 @@ body {
     align-items: center;
 }
 
-
-/* Nav Bar List*/
+/********** Nav Bar List **********/
 .navList ul li {
     font-size: 17px;
     list-style: none;
@@ -79,7 +72,7 @@ body {
 }
 
 
-/* Nav Icon */
+/********** Nav Icon **********/
 .navIcon {
     height: 60px;
     width: 60px;
@@ -145,7 +138,7 @@ body {
 
 
 
-/* Hook */
+/********** Hook **********/
 .hook {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
@@ -173,8 +166,7 @@ body {
 }
 
 
-
-/* Content */
+/********** Content **********/
 .content {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
@@ -229,7 +221,7 @@ body {
 
 
 
-/* Media Query */
+/********** Media Query **********/
 @media (max-height: 600px) {
     .hook, .content {
         top: 35%;
