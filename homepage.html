@@ -2,305 +2,550 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ka Hei's Website</title>
 
     <!-- Remix Icon-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
     <!-- Main css file -->
-    <link href="./css/style.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="./img/favicon.ico" />
-
+    <link href="./css/homeStyle.css" rel="stylesheet">
+    <!-- Swiper css CDN -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 </head>
 <body>
 
-<section id="hook-header">
-    <div class="hook-header container">
-        <div class="hook-nav-bar">
-            <div class="logo">
-                <a href="./index.html">
-                    <p><span>K</span>a<span>H</span>ei</p>
-                </a>
-            </div>
-            <div class="nav-list">
-                <div class="nav-icon">
+    <!--  Nav Bar  -->
+    <div class="banner">
+        <div class="navbar">
+
+            <a href="home.html"><img alt="Ka Hei's Logo" src="img/icon.png" class="homeLogo"></a>
+
+            <div class="navList">
+                <div class="navIcon">
                     <div class="bar"></div>
                 </div>
+
                 <ul>
                     <li><a href="./index.html" data-after="home"> Home </a></li>
-                    <li><a href="#about-me" data-after="aboutme"> About Me </a></li>
+                    <li><a href="#aboutMe" data-after="aboutme"> About Me </a></li>
                     <li><a href="#education" data-after="education"> Education </a></li>
-                    <li> <a href="#skills" data-after="skill"> Skills </a></li>
+                    <li><a href="#skills" data-after="skill"> Skills </a></li>
                     <li><a href="#projects" data-after="project"> Projects </a></li>
-                    <li><a href="#work" data-after="experience"> Work Experience </a></li>
-                    <li><a href="#contact" data-after="contact"> Contact Info </a></li>
+                    <li><a href="#aboutMe" data-after="experience"> Work Experience </a></li>
+                    <li><a href="#aboutMe" data-after="contact"> Contact Info </a></li>
                 </ul>
             </div>
-        </div>
-    </div>
-</section>
-
-<!--About Me-->
-<section id="about-me">
-    <div class="about-me container">
-
-        <div class="col-left">
-            <div class="my-img">
-                <img alt="my image" src="./img/my_img.jpeg">
-            </div>
-        </div>
-
-        <div class="col-right">
-            <h1 class="section-title">About <span>ME</span></h1>
-            <p> Hi! My name is Ka Hei. Currently, I am a recent graduate at Boston University and majoring in Computer Science.
-                I am passionate about learning new skills, and happy to help others with my experiences.
-                Also, I am interested in Front-End Development, Software Engineering, and Game Development.
-            </p>
-            <a href="./Resume.pdf" target="_blank" class="resume-btn">Check out my Resume</a>
-        </div>
-
-    </div>
-</section>
-
-
-<!-- Education -->
-<section id="education">
-    <div class="education container">
-
-        <div class="col-right">
-            <h1 class="section-title"><span>E</span>ducation</h1>
-            <p class="bu">Boston University</p>
-            <p>2020 - 2022</p>
-            <p>Bachelor of Arts, Computer Science</p>
-            <img src="./img/bu.png">
-            <br><br><br>
-            <p class="umb">University of Massachusetts Boston</p>
-            <p>2018 - 2020</p>
-        </div>
-    </div>
-</section>
-
-<!-- Skills -->
-<section id="skills">
-    <h1 class="section-title"><span>S</span>kills </h1>
-
-    <div class="skills container">
-        <div class="row-1">
-            <div class="card">
-                <div class="circle">
-                    <p>Web Development</p>
-                </div>
-                <div class="content">
-                    <h3>HTML</h3>
-                    <h3>CSS</h3>
-                    <h3>Javascript</h3>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="circle">
-                    <p>Database</p>
-                </div>
-                <div class="content">
-                    <h3>MySQL</h3>
-                    <h3>MongoDB</h3>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="circle">
-                    <p>Language</p>
-                </div>
-                <div class="content">
-                    <h3>Cantonese</h3>
-                    <h3>English</h3>
-                    <h3>Mandarin</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="row-2">
-            <div class="card">
-                <div class="circle">
-                    <p>Programming Language</p>
-                </div>
-                <div class="content">
-                    <h3>Python</h3>
-                    <h3>Java</h3>
-                    <h3>C</h3>
-                    <h3>OCaml</h3>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="circle">
-                    <p>Autodesk</p>
-                </div>
-                <div class="content">
-                    <h3>Maya</h3>
-                    <h3>CAD</h3>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="circle">
-                    <p>Adobe</p>
-                </div>
-                <div class="content">
-                    <h3>Photoshop</h3>
-                    <h3>Premiere Pro</h3>
-                </div>
-            </div>
-        </div>
-</section>
-
-<!-- projects -->
-<section id="projects">
-    <h1 class="section-title">Recent <span>Projects</span></h1>
-    <div class="projects container">
-        <div class="all-projects">
-
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Project 1</h1>
-                    <h2>Weather API</h2>
-                    <p>A webpage that created by React, Javascript, html&css, OpenWeatherMap API.
-                        Users can search city name, and will return the local time, temperature, max/min temperature, humidity, etc., of the specific city.</p>
-                    <a href="https://github.com/kaheilam/WeatherAPI" target="_blank">Check out this project!</a>
-                </div>
-                <div class="project-img">
-                    <img src="/img/p1.png" style="width: 600px; height: 600px;">
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Project 2</h1>
-                    <h2>Summarize CheatSheet</h2>
-                    <p>A webpage that summarize common HTML&CSS elements, JavaScript, etc. with examples.</p>
-                    <a href="https://github.com/kaheilam/Summarize-CheatSheet" target="_blank">Check out this project!</a>
-                </div>
-                <div class="project-img">
-                    <img src="/img/p2.png" style="width: 600px; height: 370px;">
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-info">
-                    <h1>Project 3</h1>
-                    <h2>Spofity</h2>
-                    <p>A web application created by React, JavaScript, Html&CSS and Spotify API.
-                        This is a website that allows users to search the Spotify library, songs, create a custom playlist, then save it to their account.</p>
-                    <a href="https://github.com/kaheilam/SpotifyAPI" target="_blank">Check out this project!</a>
-                </div>
-                <div class="project-img">
-
-                </div>
-            </div>
 
         </div>
     </div>
-</section>
 
 
-<!-- Volunteer / Work Experience -->
-<section id="work">
-    <h1 class="section-title"> Volunteer/Work <span>Experience</span></h1>
-    <div class="work container">
+    <!--  About Me  -->
+    <div class="aboutMe" id="aboutMe">
+        <div class="aboutMe-container">
 
-            <div class="work-items">
-                <div class="content">
-                    <h2>Product Designer</h2>
-                    <h4>Boston Chinatown Neighborhood Center (BCNC)</h4>
-                    <sub>2017 - 2018</sub>
+            <div class="aboutMeLeft">
+                <h3>About</h3>
+                <h1>A Little About Me...</h1>
+                <p> Hey there! My name is Ka Hei.
+                    <br>
+                    I am a recent graduate at Boston University and majoring in Computer Science.
                     <br><br>
-                    <p>
-                        <ul>
-                            <li> - Design sleeping schedule notebooks
-                            <li> - Brainstormed product ideas
-                            <li> - Design products to help people of sleep deprivation
-                        </ul>
-                    </p>
+                    I discovered my interest on front-end, software development and game development during my journey on studying computer science.
+                    In addition to develop a good understanding about CS, I worked on my personal website and several projects such as weather app and Spotify song search etc.
+                    <br>
+                    All these projects motivate me to learn more about how to develop new things.
+                    I also took classes at school that drove me to have a deeper understanding in software development.
+                    <br><br>
+                    I am really passionate about learning new skills, and happy to help others with my experiences!
+                </p>
+
+                <a href="Resume.pdf" target="_blank"><button type="button">More About Me</button></a>
+            </div>
+
+            <div class="aboutMeRight">
+                <img alt="my image" src="img/personalPic.png">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--  Education  -->
+    <div class="education" id="education">
+        <div class="education-hook">
+            <h3>Education</h3>
+            <h1>My Journey Starts Now...</h1>
+        </div>
+
+        <div class="education-container">
+            <div class="educationLeft">
+                <div class="educationLeft-content">
+                    <h4>University of Massachusetts Boston</h4>
+                    <p>2018 - 2020</p>
+                    <p>B.S. , Computer Science</p>
+                    <ul>
+                        <li>Transferred to Boston University in 2020</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="educationRight">
+                <div class="educationRight-content">
+                    <h4>Boston University</h4>
+                    <p>2020 - 2022</p>
+                    <p>B.A. , Computer Science</p>
+                    <ul>
+                        <li>Graduated on May 2022</li>
+                    </ul>
                 </div>
             </div>
 
-        <div class="work-items">
-            <div class="content">
-                <h2>Teacher Assistant</h2>
-                <h4>North Quincy High School</h4>
-                <sub>2017 - 2018</sub>
-                <br><br>
-                <p>
-                    <ul>
-                        <li> - Assisted teachers with classroom management
-                        <li> - Maintain positive learning environment
-                        <li> - Help students who need supports
-                    </ul>
-                </p>
-            </div>`
+        </div>
+    </div>
+
+    <!--  Skills  -->
+    <div class="skills" id="skills">
+        <div class="skills-hook">
+            <h3>Skills</h3>
+            <h1>These are the treasures in my life</h1>
         </div>
 
-        <div class="work-items">
-            <div class="content">
-                <h2>Academic Mentor</h2>
-                <h4>QARI</h4>
-                <sub>2017 - 2018</sub>
-                <br><br>
-                <p>
-                    <ul>
-                        <li> - Tutor middle school students with their academic work
-                        <li> - Help students practice communication and leader skills
-                    </ul>
-                </p>
+        <div class="skills-container">
+            <div class="square-row1">
+                <div class="s1"></div>
+                <div class="s2"></div>
+            </div>
+            <div class="square-row2">
+                <div class="s3"></div>
+
+                <div class="s4">
+                    <img src="./img/web.png">
+                    <div class="skill-content">
+                        <h2>JavaScript</h2>
+                        <h2>HTML</h2>
+                        <h2>CSS</h2>
+                        <h2>React.js</h2>
+                    </div>
+                </div>
+                <div class="s5">
+                    <img src="./img/language.png">
+                    <div class="skill-content">
+                        <h2>Cantonese</h2>
+                        <h2>English</h2>
+                        <h2>Mandarin</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="square-row3">
+                <div class="s6"></div>
+                <div class="s7">
+                    <img src="./img/soft-skills.png">
+                    <div class="skill-content">
+                        <h2>Communication</h2>
+                        <h2>Collaboration</h2>
+                    </div>
+                </div>
+
+                <div class="s8">
+                    <img src="./img/database.png">
+                    <div class="skill-content">
+                        <h2>MySQL</h2>
+                        <h2>MongoDB</h2>
+                    </div>
+                </div>
+                <div class="s9">
+                    <img src="./img/autodesk.png">
+                    <div class="skill-content">
+                        <h2>Maya</h2>
+                        <h2>CAD</h2>
+                    </div>
+                </div>
+                <div class="s17"></div>
+            </div>
+            <div class="square-row4">
+                <div class="s10">
+                    <img src="./img/code.png">
+                    <div class="skill-content">
+                        <h2>Python</h2>
+                        <h2>Java</h2>
+                        <h2>C</h2>
+                        <h2>OCaml</h2>
+                    </div>
+                </div>
+                <div class="s11"></div>
+                <div class="s12"></div>
+            </div>
+            <div class="square-row5">
+                <div class="s13"></div>
+                <div class="s14">
+                    <img src="./img/adobe.png">
+                    <div class="skill-content">
+                        <h2>Photoshop</h2>
+                        <h2>Premiere Pro</h2>
+                    </div>
+                </div>
+                <div class="s15"></div>
+                <div class="s16"></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="skills-mobile-container">
+
+            <div class="skills-mobile-content">
+                <h2 class="skills-mobile-title"> Web Development </h2>
+
+                <div class="skills-mobile-wrap">
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/js.png" class="skills-mobile-img">
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/html-5.png" class="skills-mobile-img">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/css-3.png" class="skills-mobile-img">
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/react.png" class="skills-mobile-img">
+                        <h4>React.js</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="skills-mobile-content">
+                <h2 class="skills-mobile-title"> Language </h2>
+
+                <div class="skills-mobile-wrap">
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/python.png" class="skills-mobile-img">
+                        <h4>Python</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/java.png" class="skills-mobile-img">
+                        <h4>Java</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/c.png" class="skills-mobile-img">
+                        <h4>C</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/ocaml.png" class="skills-mobile-img">
+                        <h4>OCaml</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="skills-mobile-content">
+                <h2 class="skills-mobile-title"> Database </h2>
+
+                <div class="skills-mobile-wrap">
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/mysql.png" class="skills-mobile-img">
+                        <h4>MySQL</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/mongo-db.png" class="skills-mobile-img">
+                        <h4>MongoDB</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-mobile-content">
+                <h2 class="skills-mobile-title"> Adobe </h2>
+
+                <div class="skills-mobile-wrap">
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/photoshop.png" class="skills-mobile-img">
+                        <h4>Photoshop</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/premiere-pro.png" class="skills-mobile-img">
+                        <h4>Premiere Pro</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-mobile-content">
+                <h2 class="skills-mobile-title"> Autodesk </h2>
+
+                <div class="skills-mobile-wrap">
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/maya.png" class="skills-mobile-img">
+                        <h4>Maya</h4>
+                    </div>
+                    <div class="skills-mobile-wrap-content">
+                        <img src="img/cad.png" class="skills-mobile-img">
+                        <h4>CAD</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--  Projects  -->
+    <div class="projects" id="projects">
+        <div class="projects-hook">
+            <h3>Projects</h3>
+            <h1>My Most Recent Works</h1>
+        </div>
+
+        <div class="projects-container swiper">
+            <div class="swiper-wrapper">
+                <!-- Project 1 -->
+                <div class="projects-content swiper-slide">
+                    <img src="img/pj1.jpeg">
+                    <div>
+                        <h4 class="projects-title">Personal Website</h4>
+                            <p class="projects-des">A website about myself and personal experiences. You can learn more about me here! </p>
+                        <a href="https://kaheilam.github.io" target="_blank" class="projects-button"><button>Check Out</button><i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="projects-content swiper-slide">
+                    <img src="img/pj2.jpeg">
+                    <div>
+                        <h4 class="projects-title">Spotify Playlist</h4>
+                            <p class="projects-des">A webpage created by React, JavaScript, HTML&CSS and Spotify API.
+                                This is a website that allows users to search the Spotify library, songs, create a custom
+                                playlist, then save it to their account.</p>
+                        <a href=": https://github.com/kaheilam/SpotifyAPI" target="_blank" class="projects-button"><button>Check Out</button><i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="projects-content swiper-slide">
+                    <img src="img/pj3.png">
+                    <div>
+                        <h4 class="projects-title">Weather App API</h4>
+                            <p class="projects-des">A project that created by React, JavaScript, HTML&CSS, OpenWeatherMap API.
+                                Users can search city name, and will return the local time, temperature, max/min temperature,
+                                humidity, etc. of the specific city.</p>
+                        <a href="https://github.com/kaheilam/WeatherAPI" target="_blank" class="projects-button"><button>Check Out</button><i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="projects-content swiper-slide">
+                    <img src="img/pj4.png">
+                    <div>
+                        <h4 class="projects-title">Photo-sharing Database</h4>
+                        <p class="projects-des">A project similar to Flickr. It was created by Flask, HTML, MySQL and python.
+                            Users can upload photos, add friends, search photos based on tags, comments, like a photo.</p>
+                        <a href="#https://github.com/kaheilam/Photoshare.git"  target="_blank" class="projects-button"><button>Check Out</button><i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="projects-content swiper-slide">
+                    <img src="img/pj5.jpeg">
+                    <div>
+                        <h4 class="projects-title">Recipe Search</h4>
+                        <p class="projects-des">A website create by using recipe API, MySQL, python, HTML&CSS.
+                            Users can search recipes by entering ingredients' name. The webpage will return the most relevant
+                            recipes with the estimation cost of making that specific dish.
+                        </p>
+                        <a href="https://github.com/bobersnip/CS411-Group5.git" target="_blank" class="projects-button"><button>Check Out</button><i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <!--  Projects  -->
+    <div class="experiences" id="experiences">
+        <img src="img/deco.png" class="deco1">
+        <div class="experiences-hook">
+            <h3>Experiences</h3>
+            <h1>I appreciate a lot from what I experienced</h1>
+        </div>
+
+
+        <div class="experiences-container">
+            <div class="timeline">
+                <div class="line"></div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="experiences-content">
+                        <h2>Product Designer</h2>
+                        <h4>2017 - 2018</h4>
+                        <p>Brainstormed product ideas with teammates, and mainly focus on design products such
+                            as sleeping schedule notebooks that help people to relief sleep deprivation problems.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="experiences-content">
+                        <h2>Academic Tutor</h2>
+                        <h4>2017 - 2018</h4>
+                        <p>Tutor middle school students with their academic work and help student practice
+                            communication and leadership skills.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="experiences-content">
+                        <h2>Restaurant Manager</h2>
+                        <h4>2019 - 2022</h4>
+                        <p>In charge of managing the daily income, also answer the phone for pick-up and
+                            delivery, pack up the food.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-</section>
-
-<!--&lt;!&ndash; Gallery &ndash;&gt;-->
 
 
-<!-- Contact -->
-<section id="contact">
-    <div class="contact container">
-        <div>
-            <h1 class="section-title">Contact <span>info</span></h1>
-        </div>
-        <div>
-            <div class="contact-items">
-                <i class="ri-mail-line"></i>
-                <h2>Email</h2>
-                <a href="mailto: kaheilam0426@gmail.com" class="contact-btn">Sent me an Email</a>
+
+    <!--  Contact  -->
+    <div class="contact" id="contact">
+        <img src="img/deco2.png" class="deco2">
+        <img src="img/deco3.png" class="deco3">
+        <div class="contact-container">
+           <div class="contactInfo">
+               <div>
+                   <h3>Contact</h3>
+
+                   <ul class="info">
+                       <li>
+                           <span><i class="ri-map-pin-line"></i></span>
+                           <span>Boston, MA <br> Buffalo, NY </span>
+                       </li>
+                       <li>
+                           <span><i class="ri-mail-line"></i></span>
+                           <span>kaheilam0426@gmail.com</span>
+                       </li>
+                   </ul>
+
+                   <ul class="contact-icon">
+                       <li><a href="#"></a><i class="ri-github-fill"></i></li>
+                       <li><a href="#"></a><i class="ri-linkedin-box-fill"></i></li>
+                       <li><a href="#"></a><i class="ri-facebook-box-fill"></i></li>
+                   </ul>
+               </div>
+           </div>
+
+            <div class="contactForm">
+
+                <div class="input-area">
+                    <h2 style="text-decoration: underline">Send a Message</h2>
+                    <div class="formBox">
+
+                        <div class="inputBox">
+                            <span>First Name *</span>
+                            <label>
+                                <input type="text" name="" required>
+                            </label>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Last Name *</span>
+                            <label>
+                                <input type="text" name="" required>
+                            </label>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Email *</span>
+                            <label>
+                                <input type="text" name="" required>
+                            </label>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Phone Number</span>
+                            <label>
+                                <input type="text" name="">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-area">
+                    <div class="inputBox">
+                        <p>Message</p>
+                        <label>
+                            <textarea name="" rows="10" cols="80"></textarea>
+                        </label>
+                    </div>
+                </div>
+
+                <input name="" value="Submit" type="submit">
+
+
             </div>
-            <div class="contact-items">
-                <i class="ri-linkedin-box-fill"></i>
-                <h2>LinkedIn</h2>
-                <a href="https://www.linkedin.com/in/ka-hei-lam-a08264206/" target="_blank" class="contact-btn">My LinkedIn Page</a>
+
             </div>
 
-            <div class="contact-items">
-                <i class="ri-github-fill"></i>
-                <h2>Github</h2>
-                <a href="https://github.com/kaheilam?tab=repositories" target="_blank" class="contact-btn">My Github Page</a>
-            </div>
         </div>
     </div>
-</section>
 
-<!-- Footer -->
-<section id="footer">
-    <div class="footer container">
-        <div class="brand">
-            <h1><span>K</span>a <span>H</span>ei</h1>
-            <br>
-            <p>Thanks for visiting my homepage!</p>
-            <p>Copyright @ 2022 Ka Hei Lam. All rights reserved</p>
-        </div>
-    </div>
-</section>
 
-<script src="./js/app.js"></script>
+
+
+
+
+
+
+
+
+
+    <script src="./js/app.js"></script>
+    <!-- Swiper JS file -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Timeline JS file -->
+    <script src="./js/timeline.js"></script>
+    <script>
+        const swiperProject = new Swiper('.projects-container', {
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+             breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    // spaceBetween: 6,
+                },
+                 760: {
+                     slidesPerView: 2,
+                 },
+                 1024: {
+                     slidesPerView: 3,
+                     spaceBetween: 10,
+                 }
+             }
+        });
+    </script>
 </body>
 </html>

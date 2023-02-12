@@ -2,60 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
     <title>Ka Hei's Website</title>
 
     <!-- Remix Icon-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
     <!-- Main css file -->
     <link href="./css/style.css" rel="stylesheet">
-    
-    <link rel="shortcut icon" href="./img/favicon.ico">
 
 </head>
 <body>
 
-    <section id="hook-header">
-        <div class="hook-header container">
-            <div class="hook-nav-bar">
-                <div class="logo">
-                    <a href="./index.html">
-                        <p><span>K</span>a<span>H</span>ei</p>
-                    </a>
+    <div class="banner">
+        <div class="navbar">
+
+            <a href="index.html"><img alt="Ka Hei's Logo" src="img/logo.png" class="logo"></a>
+
+            <div class="navList">
+
+
+                <div class="navIcon">
+                    <div class="bar"></div>
                 </div>
-                <div class="nav-list">
-                    <div class="nav-icon">
-                        <div class="bar"></div>
-                    </div>
-                    <ul>
-                        <li><a href="./index.html" data-after="home"> Home </a></li>
-                        <li><a href="homepage.html#about-me" data-after="aboutme"> About Me </a></li>
-                        <li><a href="homepage.html#education" data-after="education"> Education </a></li>
-                        <li> <a href="homepage.html#skills" data-after="skill"> Skills </a></li>
-                        <li><a href="homepage.html#projects" data-after="project"> Projects </a></li>
-                        <li><a href="homepage.html#work" data-after="experience"> Work Experience </a></li>
-                        <li><a href="homepage.html#contact" data-after="contact"> Contact Info </a></li>
-                    </ul>
-                </div>
+
+                <ul>
+                    <li><a href="./index.html" data-after="home"> Home </a></li>
+                    <li><a href="./homepage.html" data-after="aboutme"> About Me </a></li>
+                    <li><a href="./homepage.html" data-after="education"> Education </a></li>
+                    <li><a href="./homepage.html" data-after="skill"> Skills </a></li>
+                    <li><a href="./homepage.html" data-after="project"> Projects </a></li>
+                    <li><a href="./homepage.html" data-after="experience"> Work Experience </a></li>
+                    <li><a href="./homepage.html" data-after="contact"> Contact Info </a></li>
+                </ul>
             </div>
+
+
         </div>
-    </section>
 
+        <div class="hook">
+            <p>Hello ! My name is </p>
+            <h1 class="name"><span class="typing"></span></h1>
+            <h2>Welcome to my homepage !</h2>
+        </div>
 
-    <!-- hook -->
-    <section id="hook">
-        <div class="hook container">
+        <div class="content">
             <div>
-                <h1 class="name-animated hello">Hello!</h1>
-                <h1 class="name-animated">My Name is</h1>
-                <h1 class="name-animated">Ka Hei</h1>
-                <br><br><br>
-                <a href="./homepage.html" type="button" class="enter-portfolio-btn"> GO TO PORTFOLIO</a>
+                <button type="button"><span></span><a href="homepage.html">GO TO MY PORTFOLIO</a></button>
+                <button type="button"><span></span><a href="Resume.pdf" target="_blank">CHECK OUT MY RESUME</a></button>
             </div>
         </div>
-    </section>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+        let typed = new Typed(".typing", {
+            strings: ["KaHei&nbsp;"],
+            typeSpeed: 250,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
     <script src="./js/app.js"></script>
+
+
 </body>
 </html>
