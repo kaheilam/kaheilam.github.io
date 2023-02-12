@@ -30,8 +30,8 @@
                     <li><a href="#education" data-after="education"> Education </a></li>
                     <li><a href="#skills" data-after="skill"> Skills </a></li>
                     <li><a href="#projects" data-after="project"> Projects </a></li>
-                    <li><a href="#aboutMe" data-after="experience"> Work Experience </a></li>
-                    <li><a href="#aboutMe" data-after="contact"> Contact Info </a></li>
+                    <li><a href="#experiences" data-after="experience"> Work Experience </a></li>
+                    <li><a href="#contact" data-after="contact"> Contact Info </a></li>
                 </ul>
             </div>
 
@@ -39,7 +39,8 @@
     </div>
 
 
-    <!--  About Me  -->
+
+    <!----------  About Me  ---------->
     <div class="aboutMe" id="aboutMe">
         <div class="aboutMe-container">
 
@@ -70,7 +71,8 @@
     </div>
 
 
-    <!--  Education  -->
+
+    <!----------  Education  ---------->
     <div class="education" id="education">
         <div class="education-hook">
             <h3>Education</h3>
@@ -102,7 +104,7 @@
         </div>
     </div>
 
-    <!--  Skills  -->
+    <!----------  Skills  ---------->
     <div class="skills" id="skills">
         <div class="skills-hook">
             <h3>Skills</h3>
@@ -189,8 +191,7 @@
         </div>
 
 
-
-
+        <!---------- Skills Mobile Version ---------->
         <div class="skills-mobile-container">
 
             <div class="skills-mobile-content">
@@ -287,14 +288,12 @@
             </div>
 
         </div>
-
-
     </div>
 
 
 
 
-    <!--  Projects  -->
+    <!----------  Projects  ---------->
     <div class="projects" id="projects">
         <div class="projects-hook">
             <h3>Projects</h3>
@@ -364,20 +363,18 @@
 
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-
             <div class="swiper-pagination"></div>
         </div>
     </div>
 
 
-    <!--  Projects  -->
+    <!----------  Experiences  ---------->
     <div class="experiences" id="experiences">
         <img src="img/deco.png" class="deco1">
         <div class="experiences-hook">
             <h3>Experiences</h3>
             <h1>I appreciate a lot from what I experienced</h1>
         </div>
-
 
         <div class="experiences-container">
             <div class="timeline">
@@ -415,11 +412,35 @@
 
             </div>
         </div>
+
+    <!---------- Experiences Mobile Version ---------->
+        <div class="experiences-mobile-container">
+            <div class="experiences-mobile-content">
+                <h2>Product Designer</h2>
+                <h4>2017 - 2018</h4>
+                <p>Brainstormed product ideas with teammates, and mainly focus on design products such
+                    as sleeping schedule notebooks that help people to relief sleep deprivation problems.</p>
+            </div>
+            <div class="experiences-mobile-content">
+                <h2>Academic Tutor</h2>
+                <h4>2017 - 2018</h4>
+                <p>Tutor middle school students with their academic work and help student practice
+                    communication and leadership skills.</p>
+            </div>
+            <div class="experiences-mobile-content">
+                <h2>Restaurant Manager</h2>
+                <h4>2019 - 2022</h4>
+                <p>In charge of managing the daily income, also answer the phone for pick-up and
+                    delivery, pack up the food.</p>
+            </div>
+        </div>
+
+
     </div>
 
 
 
-    <!--  Contact  -->
+    <!----------  Contact  ---------->
     <div class="contact" id="contact">
         <img src="img/deco2.png" class="deco2">
         <img src="img/deco3.png" class="deco3">
@@ -434,69 +455,60 @@
                            <span>Boston, MA <br> Buffalo, NY </span>
                        </li>
                        <li>
-                           <span><i class="ri-mail-line"></i></span>
+                           <a href="mailto: kaheilam0426@gmail.com"><span><i class="ri-mail-line"></i></span></a>
                            <span>kaheilam0426@gmail.com</span>
                        </li>
                    </ul>
 
                    <ul class="contact-icon">
-                       <li><a href="#"></a><i class="ri-github-fill"></i></li>
-                       <li><a href="#"></a><i class="ri-linkedin-box-fill"></i></li>
-                       <li><a href="#"></a><i class="ri-facebook-box-fill"></i></li>
+                       <li><a href="https://github.com/kaheilam?tab=repositories" target="_blank"><i class="ri-github-fill"></i></a></li>
+                       <li><a href="https://www.linkedin.com/in/ka-hei-lam-a08264206/" target="_blank"><i class="ri-linkedin-box-fill"></i></a></li>
+                       <li><a href="https://www.facebook.com/profile.php?id=100001231672928" target="_blank"><i class="ri-facebook-box-fill"></i></a></li>
                    </ul>
                </div>
            </div>
 
-            <div class="contactForm">
 
+            <form action="https://formspree.io/f/xpzepolq"  method="post">
+            <div class="contactForm">
                 <div class="input-area">
                     <h2 style="text-decoration: underline">Send a Message</h2>
-                    <div class="formBox">
+                        <div class="formBox">
 
-                        <div class="inputBox">
-                            <span>First Name *</span>
-                            <label>
-                                <input type="text" name="" required>
-                            </label>
-                        </div>
+                            <div class="inputBox">
+                                <span>First Name *</span>
+                                <label><input type="text" name="name" required class="form-control" placeholder="First Name" ></label>
+                            </div>
 
-                        <div class="inputBox">
-                            <span>Last Name *</span>
-                            <label>
-                                <input type="text" name="" required>
-                            </label>
-                        </div>
+                            <div class="inputBox">
+                                <span>Last Name *</span>
+                                <label><input type="text" name="name" required class="form-control" placeholder="Last Name" ></label>
+                            </div>
 
-                        <div class="inputBox">
-                            <span>Email *</span>
-                            <label>
-                                <input type="text" name="" required>
-                            </label>
-                        </div>
+                            <div class="inputBox">
+                                <span>Email *</span>
+                                <label><input type="text" name="email" required class="form-control" placeholder="Email Address" ></label>
+                            </div>
 
-                        <div class="inputBox">
-                            <span>Phone Number</span>
-                            <label>
-                                <input type="text" name="">
-                            </label>
+                            <div class="inputBox">
+                                <span>Phone Number</span>
+                                <label><input type="text" name="phone-number" class="form-control" ></label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="text-area">
-                    <div class="inputBox">
-                        <p>Message</p>
-                        <label>
-                            <textarea name="" rows="10" cols="80"></textarea>
-                        </label>
+                    <div class="text-area">
+                        <div class="inputBox">
+                            <p>Message *</p>
+                            <label><textarea name="message" rows="10" cols="80" required class="form-control" placeholder="Let me know what you think! " ></textarea></label>
+                        </div>
                     </div>
+
+                <button type="submit">Submit</button>
+
+
                 </div>
-
-                <input name="" value="Submit" type="submit">
-
-
-            </div>
-
+            </form>
             </div>
 
         </div>
