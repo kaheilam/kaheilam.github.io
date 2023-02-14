@@ -996,8 +996,6 @@ ul {
         height: 290px;
     }
     .contact-container { display: inline-block; }
-    .deco2 { bottom: -590%; }
-    .deco3 { bottom: -700%; }
 }
 
 @media (max-width: 848px) {
