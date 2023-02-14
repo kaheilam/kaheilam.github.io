@@ -240,6 +240,7 @@ ul {
     margin-right: auto;
     margin-left: auto;
     padding-left: 70px;
+    padding-right: 70px;
     justify-content: center;
 }
 .education-container {
@@ -740,8 +741,8 @@ ul {
     position: absolute;
     height: 300px;
     width: 300px;
-    left: auto;
     top: auto;
+    right: 0;
     left: 0;
     bottom: -300%;
     opacity: .69;
@@ -941,7 +942,9 @@ ul {
     .aboutMeLeft h1, .education h1, .skills h1, .projects h1, .experiences h1 {
         font-size: 25px;
     }
-    .education-container { display: block; }
+    .education-container {
+        display: block;
+    }
     .educationLeft {
         margin-bottom: 60px;
     }
@@ -1004,6 +1007,15 @@ ul {
         height: 390px;
         margin-top: 60px;
     }
+    .deco1 {
+        display: none;
+    }
+    .deco2 {
+        display: none;
+    }
+    .deco3 {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1041,9 +1053,6 @@ ul {
         color: rgba(180, 144, 139, 0.9);
     }
     .experiences-mobile-content p { color: rgba(73, 50, 50, 0.86); }
-    .deco1 { bottom: -190%; }
-    .deco2 { bottom: -460%; }
-    .deco3 { bottom: -570%; }
 }
 
 
