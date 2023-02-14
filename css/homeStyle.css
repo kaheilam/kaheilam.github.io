@@ -500,7 +500,7 @@ ul {
     left: auto;
     top: auto;
     right: 0;
-    bottom: -260%;
+    bottom: -80%;
     opacity: .69;
 }
 .projects-container, .projects-hook {
@@ -733,7 +733,7 @@ ul {
     left: auto;
     top: auto;
     right: 0;
-    bottom: -390%;
+    bottom: -170%;
     opacity: .69;
 }
 .deco3 {
@@ -743,7 +743,7 @@ ul {
     left: auto;
     top: auto;
     left: 0;
-    bottom: -490%;
+    bottom: -300%;
     opacity: .69;
 }
 .contact .contactInfo {
