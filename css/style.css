@@ -1,308 +1,330 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-:root{
-    --regular: 'Montserrat', sans-serif;
-    --iconspan: 'Kavoon', cursive;
+:root {
+  --regular: "Montserrat", sans-serif;
+  --iconspan: "Kavoon", cursive;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 body {
-    overflow-y:hidden;
-    overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
+
 .logo {
-    width: 150px;
-    cursor: pointer;
+  width: 140px;
+  cursor: pointer;
 }
+
 .logo img {
-    width: 50%;
-    opacity: 0.9;
-    margin-left: -30px;
-    min-width: 165px;
+  opacity: 0.8;
 }
+
 .banner {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(44, 44, 44, 0.75), rgba(12, 12, 12, 0.75)), url('/img/homepage-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    font-family: var(--regular);
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(112, 100, 186, 0.75),
+      rgba(5, 5, 21, 0.75)
+    ),
+    url("../img/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: var(--regular);
 }
 
 /********** Nav Bar **********/
 .navbar {
-    width: 90%;
-    margin: auto;
-    padding: 30px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 95%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /********** Nav Bar List **********/
 .navList ul li {
-    font-size: 17px;
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-.navList ul li a {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.navList ul li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -9px;
-    height: 3px;
-    width: 0;
-    background: #a3ffdc;
-    transition: 0.4s;
-}
-.navList ul li:hover::after {
-    width: 100%;
+  font-size: 17px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
 }
 
+.navList ul li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navList ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  height: 3px;
+  width: 0;
+  background: #c8ffdae4;
+  transition: 0.4s;
+}
+
+.navList ul li:hover::after {
+  width: 100%;
+}
 
 /********** Nav Icon **********/
 .navIcon {
-    height: 60px;
-    width: 60px;
-    border: 3px solid white;
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 100;
-    margin-right: 5px;
+  height: 60px;
+  width: 60px;
+  border: 3px solid #8aaee8;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  margin-right: 5px;
 }
+
 .navIcon::after {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 3px solid white;
-    animation: menu_icon 1s ease infinite;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #8aaee8;
+  animation: menu_icon 1s ease infinite;
 }
+
 .navIcon .bar {
-    position: relative;
-    background-color: white;
-    height: 2px;
-    width: 30px;
-    z-index: -1;
+  position: relative;
+  background-color: #8aaee8;
+  height: 2px;
+  width: 30px;
+  z-index: -1;
 }
-.navIcon .bar::after, .navIcon .bar::before {
-    content: '';
-    background-color: white;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease;
-    transition-property: top, bottom;
-}
-.navIcon .bar::after {
-    top: 8px;
-}
+
+.navIcon .bar::after,
 .navIcon .bar::before {
-    bottom: 8px;
+  content: "";
+  background-color: #8aaee8;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease;
+  transition-property: top, bottom;
 }
-.navIcon.active .bar::before{
-    bottom: 0;
+
+.navIcon .bar::after {
+  top: 8px;
 }
-.navIcon.active .bar::after{
-    top: 0;
+
+.navIcon .bar::before {
+  bottom: 8px;
 }
+
+.navIcon.active .bar::before {
+  bottom: 0;
+}
+
+.navIcon.active .bar::after {
+  top: 0;
+}
+
 @keyframes menu_icon {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(1.3);
-    }
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
 }
-
-
 
 /********** Hook **********/
 .hook {
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    width: auto;
-    top: 50%;
-    transform: translateY(-20%);
-    left: 5%;
-}
-.hook .name {
-    font-family: "poppins", sans-serif;
-    font-size: 150px;
-    margin-top: -10px;
-    margin-left: -10px;
-    color: rgba(180, 252, 218, 0.91);
-}
-.hook p{
-    font-size: 20px;
-    color: white;
-}
-.hook h2 {
-    font-size: 25px;
-    letter-spacing: 1px;
-    color: white;
-    text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  transform: translateY(-20%);
+  left: 5%;
+  min-width: 600px;
 }
 
+.hook .name {
+  font-family: "poppins", sans-serif;
+  font-size: 150px;
+  margin-top: -10px;
+  margin-left: -10px;
+  color: #c8ffdae4;
+}
+
+.hook p {
+  font-size: 20px;
+  color: white;
+}
+
+.hook h2 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+}
 
 /********** Content **********/
 .content {
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    width: auto;
-    top: 45%;
-    transform: translateY(-20%);
-    left: 5%;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  width: auto;
+  top: 45%;
+  transform: translateY(-20%);
+  left: 5%;
+  min-width: 600px;
 }
+
 .content a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: #ffffff;
 }
+
 .content button {
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    top: 150px;
-    margin: 200px 10px;
-    left: -15px;
-    border: 2px solid #a3ffdc;
-    border-radius: 25px;
-    background: transparent;
-    cursor: pointer;
-    color: white;
-    position: relative;
-    overflow: hidden;
-    font-size: 14px;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  top: 150px;
+  margin: 200px 10px;
+  left: -15px;
+  border: 2px solid #8aaee8;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
 }
+
 .content span {
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    background: #a3ffdc;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.3s;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  background: #8aaee8;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.3s;
 }
+
 .content button:hover span {
-    width: 100%;
-}
-.content button:hover{
-    border: none;
-}
-.content button:hover a{
-    border: none;
-    color: black;
+  width: 100%;
 }
 
+.content button:hover {
+  border: none;
+  background-color: #8aaee8;
+}
 
-
-
+.content button:hover a {
+  border: none;
+  color: black;
+}
 
 /********** Media Query **********/
 @media (max-height: 600px) {
-    .hook, .content {
-        top: 35%;
-    }
+  .hook,
+  .content {
+    top: 35%;
+  }
 }
+
 @media (max-height: 500px) {
-    .hook p {
-        font-size: 15px;
-    }
-    .hook .name {
-        font-size: 100px;
-    }
-    .hook h2 {
-        font-size: 18px;
-    }
-    .hook, .content {
-        top: 50%;
-    }
-    .content button {
-        display: none;
-    }
+  .hook p {
+    font-size: 15px;
+  }
+  .hook .name {
+    font-size: 100px;
+  }
+  .hook h2 {
+    font-size: 18px;
+  }
+  .hook,
+  .content {
+    top: 50%;
+  }
+  .content button {
+    display: none;
+  }
 }
 
 @media (min-width: 1300px) {
-    .navIcon {
-        display: none;
-    }
+  .navIcon {
+    display: none;
+  }
 }
 
 @media (max-width: 1300px) {
-    .navList ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: rgba(24, 30, 35, 0.95);
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 100%;
-        justify-content: center;
-        align-items: center;
-        overflow-x: hidden;
-        z-index: 10;
-        transition: 0.5s ease left;
-    }
-    .navList ul.active {
-        left: 0;
-    }
-    .navList ul li a {
-        display: block;
-        color: white;
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-        line-height: 50px;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 15px;
-    }
-    .navList ul li a::after {
-        content: attr(data-after);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        color: rgba(0, 0, 0, 0.62);
-        font-size: 8rem;
-        letter-spacing: 30px;
-        z-index: -1;
-        transition: 0.3s ease letter-spacing;
-    }
-    .navList ul li:hover a::after {
-        transform: translate(-50%, -50%) scale(1);
-        letter-spacing: initial;
-    }
-    .navList ul li:hover a {
-        color: #a3ffdc;
-    }
-    .navList ul li::after {
-        background-color: transparent;
-    }
+  .navList ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(24, 30, 35, 0.95);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    z-index: 10;
+    transition: 0.5s ease left;
+  }
+  .navList ul.active {
+    left: 0;
+  }
+  .navList ul li a {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px;
+  }
+  .navList ul li a::after {
+    content: attr(data-after);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgba(0, 0, 0, 0.62);
+    font-size: 8rem;
+    letter-spacing: 30px;
+    z-index: -1;
+    transition: 0.3s ease letter-spacing;
+  }
+  .navList ul li:hover a::after {
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+  }
+  .navList ul li:hover a {
+    color: #8aaee8;
+  }
+  .navList ul li::after {
+    background-color: transparent;
+  }
 }
-
-
